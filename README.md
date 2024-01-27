@@ -1,7 +1,7 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=12872666)
 # Personal Website 💼🏢💻📄🗂📎🗄️🏦📠🖇🖨📱📧
 
-## Welcome to visit my website([jingye.me](https://jingye.me/)) and learn more about me. I have great travel stories on my blog page.
+## Welcome to visit my website([jingye.me](https://jingye.me/)) and learn more about me. I have great travel stories on my Blog.
 
 About Me:
 <img width="1405" alt="Screenshot 2024-01-26 at 4 04 50 PM" src="https://github.com/yej002/Personal-Website/assets/49883143/a5b13cce-bcb1-470d-a636-26f37d0a71c2">
