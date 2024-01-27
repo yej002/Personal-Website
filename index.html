@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Website">
+  <meta name="keywords" content="HTML, JavaScript">
+  <meta name="author" content="Jing Ye">
+  <title>Jing's Personal Website</title>
+  <!--- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!--- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+            <img src="./images/avatar.png" alt="Profile Picture" width="100">
+        </figure>
+
+        <div class="info-content">
+            <h1 class="name" title="Jing Ye">Jing Ye</h1>
+            <p class="title">Software Development Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+            <li class="contact-item">
+                <div class="icon-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+                  <a href="mailto:yejing002@gmail.com" class="contact-link">yejing002@gmail.com</a>
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-title">LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/jing-ye-002" class="contact-link">linkedin.com/in/jing-ye-002</a>
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Phone</p>
+                  <a href="tel:+16282869063" class="contact-link">+1 (628) 286-9063</a>
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Location</p>
+                  <address>Seattle, Washington, USA</address>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--- #main-content -->
+    <div class="main-content">
+        <!--- #NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--- #ABOUT -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am pursuing a master's degree in computer science at Northeastern University. 
+            I am passionate about web development, database management and mobile development, 
+            and I enjoy learning new technologies and frameworks.
+          </p>
+
+          <p>
+            Before I decided to pursue further studies in Computer Science, I worked in the banking industry. 
+            During my previous career, I developed a passion and curiosity for understanding customer behavior. 
+            This led me to write a simple script to automate the process of selecting financial products for my customers. 
+            This script not only saved me time at work but also sparked my realization of how appealing technology is to me. 
+            It was this experience that ignited my passion for studying Computer Science. 
+            I am excited to learn more techniques and apply my knowledge to develop software and tools that benefit people and simplify life.
+          </p>
+
+          <p>
+            As a software development engineer co-op at Amazon Robotics, I improved our fulfillment product for customers, 
+            focusing on developing new features and optimizing user experience. 
+            I led the development of two transformative tools that enhance operator insights into the real-time status and navigation of Proteus, 
+            Amazon's advanced autonomous robot. My role included engineering a robot path data service using Java and Gradle, 
+            integrating DynamoDB and S3 for data management, and constructing service infrastructure with CDK. 
+            In collaboration with UX designers, I designed and implemented a React and TypeScript front-end that displays live robot tasks and paths, 
+            bolstered by a performant Redux store. 
+            Additionally, I developed an internal tool with advanced authentication to streamline map metadata management, 
+            significantly improving database interaction efficiency.
+          </p>
+        </section>
+      </article>
+
+
+      <!--- #RESUME -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Northeastern University</h4>
+              <span>Expected December 2024</span>
+              <p class="timeline-text">
+                Master of Science in Computer Science, GPA: 3.89
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Illinois at Urbana-Champaign</h4>
+              <span>Auguest 2019 — December 2020</span>
+              <p class="timeline-text">
+                Master of Science in Policy Economics, GPA: 3.66
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Dayton</h4>
+              <span>Auguest 2014 — December 2018</span>
+              <p class="timeline-text">
+                Bachelor of Science in Business Administration, GPA: 3.5
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Amazon Robotics, Software Development Engineer Co-op </h4>
+              <span>January 2023 - July 2023</span>
+              <ul class="timeline-text">
+                <li>• Engineered and launched two pivotal customer-facing functionalities on an Amazon fulfillment center product, 
+                    providing dynamic visualizations of Amazon's newest generation of autonomous robot(Proteus)' operational tasks and navigation routes, 
+                    augmenting operator comprehension of the robot's operational status and zone coverage</li>
+                <li>• Collaboratively architected a comprehensive backend service for robot path data 
+                    leveraging Java and Gradle, ensuring efficient data storage and retrieval by integrating AWS services DynamoDB and S3</li>
+                <li>• Developed a robust service infrastructure utilizing AWS Cloud Development Kit (CDK), 
+                    coupled with crafting intricate data schemas and API models using Smithy and Java, contributing to a scalable service ecosystem</li>
+                <li>• Partnered with UX experts to innovate front-end designs and actualized user interfaces 
+                    using React and TypeScript, enabling the display of real-time and historical robot tasks and tracking upon selection within the product suite</li>
+                <li>• Formulated sophisticated GraphQL API clients to perform data querying operations, 
+                    utilizing React Thunk, AWS AssumeRole, and AppSync, enhancing data accessibility and interaction</li>
+                <li>• Designed and implemented a high-performance state management system using Redux, 
+                    encompassing slices and reducers that handle real-time data storage on the client side, significantly optimizing application responsiveness</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">1 Thing Org, Software Development Engineer Volunteer</h4>
+              <span>August 2022 - December 2022</span>
+              <ul class="timeline-text">
+                <li>• Contributed as a volunteer to the Anti-Asian Hate Crime Tracker initiative, bolstering a comprehensive full-stack web application 
+                    aimed at monitoring and analyzing Anti-Asian hate crime trends across the United States</li>
+                <li>• Engineered and integrated a sophisticated feature within the news tracker panel, enabling the association of follow-up 
+                    reports with their originating articles, leveraging Python Flask and Google Cloud Firestore, with rigorous testing conducted via Google Cloud Firebase Emulators</li>
+                <li>• Undertook a thorough user experience evaluation to inform the innovation of UI designs, successfully deploying the refined interface 
+                    utilizing React, JavaScript, and JQuery to enhance user engagement and interaction</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Projects</h3>
+            </div>
+  
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Yummy China</h4>
+                <span>August 2022 - December 2022</span>
+                <ul class="timeline-text">
+                    <li>• Engineered a vibrant social platform for aficionados of Chinese cuisine, delivered as a full-stack mobile application</li>
+                    <li>• Designed and implemented food recipe feature and post recommendation feature using Java and Android Studio</li>
+                    <li>• Utilized Google Cloud Firebase for robust data management of user-profiles and posts, rigorously tested the application on Android devices</li>
+                    <li>• Orchestrated a modular Fragment UI, shaping the layout and interactivity with XML and Java</li>
+                </ul>
+              </li>
+  
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Game Store</h4>
+                <span>May 2022 - August 2022</span>
+                <ul class="timeline-text">
+                    <li>• Developed a comprehensive full-stack web application for an online game store, integrating Java Spring Boot for game cataloging, user profiles, shopping cart persistence, and checkout processes</li>
+                    <li>• Implemented extensive user management features, enabling seamless registration,  authentication and authorization, and user information management</li>
+                    <li>• Established a MyBatis-based persistence layer, interfacing with a MySQL database for data integrity</li>
+                    <li>• Forged a dynamic and responsive front-end with partial-page rendering using JavaScript and AJAX</li>
+                </ul>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Pets Next Door</h4>
+                <span>January 2022 - May 2022</span>
+                <ul class="timeline-text">
+                    <li>• Prototyped a pet-themed community web application with functionalities such as creating and sharing posts with neighbors and viewing posts near a specified location</li>
+                    <li>• Built the backend using Python Django, extended the backend with Django REST framework to expose API methods to vend posts and location information for partial rendering on the frontend</li>
+                    <li>• Created a spatial database using PostgreSQL and PostGIS extension to store location-aware posts and hosted the database in a Docker container</li>
+                    <li>• Implemented an interactive visualization of the posts pinned on a map with dynamic data refresh and rendering in response to user navigation using Mapbox GL</li>
+                </ul>
+              </li>
+            </ol>
+  
+          </section>
+
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages:</h5>
+                <data>Java, Python, C/C++, JavaScript/TypeScript, HTML/XML/CSS, R</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Frameworks:</h5>
+                <data>Redux, AWS CDK, Smithy, Express.js, Spring Boot, Django</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Developer Tools:</h5>
+                <data>Gradle, Docker, React.js, Node.js, AWS S3, DynamoDB, MySQL, MongoDB, Google Cloud Platform</data>
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--- #PORTFOLIO -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="mobile development">
+              <a href="https://github.com/Mozhi21/NUMAD22FaTeam26">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./images/yummychina.png" alt="yummychina" loading="lazy">
+                </figure>
+                <h3 class="project-title">Yummy China</h3>
+                <p class="project-category">Mobile development</p>
+                <p>August 2022 - December 2022</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/yej002/online_game_store">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./images/gamestore.png" alt="gamestore" loading="lazy">
+                </figure>
+                <h3 class="project-title">Game Store</h3>
+                <p class="project-category">Web development</p>
+                <p>May 2022 - August 2022</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/yej002/Pet_Next_Door">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./images/petnextdoor.png" alt="petnextdoor" loading="lazy">
+                </figure>
+                <h3 class="project-title">Pets Next Door</h3>
+                <p class="project-category">Web development</p>
+                <p>January 2022 - May 2022</p>
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--- #TRAVELOGUE -->
+
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">TRAVELOGUE</h2>
+          <h5 class="h5">To be continued >>></h5><br>
+        </header>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./images/hawaii/Day1/1BF6915A-5402-428E-8162-C65011F14FB6.jpeg" alt="hawaii" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Travel</p>
+                    <span class="dot"></span>
+                    <time datetime="2023-08-23">Auguest 23 - 30, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">My journey in Hawaii</h3>
+                  <p class="blog-text">
+                    Hawaii is such a beautiful place that you should visit it at least once in your life.
+                    During this trip, my journey took me to Oahu Island.
+                  </p>
+                </div>
+                <div class="hidden-content" style="display: none;">
+                    <p>All photos were taken by myself. Copyright ©yej002</p>
+                    <img src="./images/hawaii/Day1/1BF6915A-5402-428E-8162-C65011F14FB6.jpeg" alt="Hotel">
+                    <img src="./images/hawaii/Day1/5AAC4D34-EF65-4C89-9687-114C513D6BC5.jpeg" alt="Hotel">
+                    <p><strong>Hotel: Hyatt Regency Waikiki Beach, Room: Ocean front</strong></p>
+                    <p>We have a beautiful view of the entire ocean without any obstructions, and I love the weather here. 
+                       The ocean looks like a painting in front of me; the colors are bright and clean.
+                    </p><br>
+
+                    <p><strong>Diamond Head (Hiking)</strong></p>
+                    <img src="./images/hawaii/Day1/98491249-EB2D-45E0-970A-A9B30A93F3A2.jpeg" alt="Diamond Head">
+                    <img src="./images/hawaii/Day1/333B178B-7E12-4672-B4A9-20C930202110.jpeg" alt="Diamond Head">
+                    <p>"Diamond Head is a volcanic tuff cone on the Hawaiian island of Oʻahu and known to Hawaiians as Lēʻahi. 
+                        The Hawaiian name is most likely derived from lae plus ʻahi because the shape of the ridgeline resembles 
+                        the shape of a tuna's dorsal fin." (Wikipedia)</p>
+                    <img src="./images/hawaii/Day1/73F58F6D-724F-42ED-9ADF-25083C212CF4.jpeg" alt="Diamond Head">
+                    <img src="./images/hawaii/Day1/2BA20A41-5245-46D7-B91C-6ED8C5498E5D.jpeg" alt="Diamond Head">
+                    <p> I had a great time hiking up Diamond Head. From the observation deck at the mountain's summit, you can overlook the entirety of Waikiki Beach. 
+                        Many tourists choose to wait here for the sunset, which casts a stunning glow on the beach, creating a breathtakingly 
+                        beautiful scene. It's worth noting that as sunset approaches, it tends to get windy and a bit chilly on the mountain, 
+                        so remember to bring a light jacket. 
+                    </p><br>
+
+                    <p><strong>Hanauma Bay (Snorkeling)</strong></p>
+                    <img src="./images/hawaii/Day3/7888CF09-ABCE-43CB-93E9-FA7E3817C19D.jpeg" alt="Hanauma Bay">
+                    <p>"Hanauma is a marine embayment formed within a tuff ring and located along the southeast coast of the Island of Oʻahu in the Hawaii Kai neighborhood of 
+                        East Honolulu, in the Hawaiian Islands. Hanauma is one of the most popular tourist destinations on the Island and has suffered somewhat from overtourism." (Wikipedia)</p>
+                    <img src="./images/hawaii/Day3/1D0C9BA3-B68D-4BF9-AD95-F970788EED9C.jpeg" alt="snorkeling">
+                    <p>This was my first time snorkeling. The weather was perfect, and we saw many beautiful, colorful fish near the reef, including a few honus (Hawaiian Green sea turtles). 
+                       If you plan to go diving in Hawaii, always wear sunscreen, even on cloudy days. Otherwise, you might end up sunburned like I did (lesson learned).
+                    </p>
+                    <img src="./images/hawaii/Day3/72FB5685-B16A-4669-B9BC-A92CA6E0DAA3.jpeg" alt="snorkeling">
+                    <img src="./images/hawaii/Day3/5471BED1-D845-4F03-856F-17BE3FFA7F1F.jpeg" alt="snorkeling">
+                    <img src="./images/hawaii/Day3/C8F08714-9CC0-4811-A941-39721F2914E9.jpeg" alt="snorkeling">
+                    <p>By the way, I have a quirky joke for you: How can you prove in one sentence that you've been to Hawaii?</p>
+                    <p>There's a unique reef triggerfish found in Hawaii, known as Humuhumu-nukunuku-āpuaʻa, which is the state fish of Hawaii.</p>
+                    <p>A memorable name isn't it? Below is what it looks like (bottom left).</p>
+                    <img src="./images/hawaii/Day3/2865F456-7821-41AA-8F23-C4939224599F.jpeg" alt="snorkeling"><br>
+                    
+                    <p><strong>Kualoa Ranch (UTV tour)</strong></p>
+                    <img src="./images/hawaii/Day2/D8F536E9-D025-494A-AB9B-FED92BD69715.jpeg" alt="Kualoa Ranch">
+                    <p>I participated in a two-hour tour at Kualoa Ranch, where we drove off-road vehicles following a designated route. The ranch is 
+                        expansive and has been a filming location for many famous movies, the most notable being Jurassic World. It boasts lush greenery and towering trees. </p>
+                    <img src="./images/hawaii/Day2/011B2176-CC70-43F4-8FD6-A7E7853381EE.jpeg" alt="Kualoa Ranch">
+                    <img src="./images/hawaii/Day2/87B5EEE7-A97B-495A-A603-95C00B0DF41E.jpeg" alt="Kualoa Ranch">
+                    <img src="./images/hawaii/Day2/772E73F1-A9C7-4DAF-85CF-865312D10889.jpeg" alt="Kualoa Ranch">
+                    <p>During the tour, I had the chance to taste the locally unique strawberry guava. Although only the size of a strawberry, it was incredibly sweet and delicious. 
+                        Unfortunately, this variety of guava is not available in other parts of the United States, and it cannot be taken out of Hawaii.</p>
+                    <img src="./images/hawaii/Day2/46763B88-1A6C-42BB-8BFC-FB543F8B2993.jpeg" alt="Kualoa Ranch">
+                    <img src="./images/hawaii/Day2/FB5B8DD0-87BD-4BCD-BE76-3E496B33CF25.jpeg" alt="Kualoa Ranch">
+                    <p>For those planning to take the off-road vehicle tour, I recommend wearing clothes that you don't mind getting dusty, as the trails can be quite dusty.</p><br>
+
+                    <p><strong>Polynesian Cultural Center</strong></p>
+                    <img src="./images/hawaii/Food/BF98E337-B8C1-4BD5-AE2B-3140CB908F9C.jpeg" alt="Polynesian Cultural Center">
+                    <img src="./images/hawaii/Food/9B51C4E4-944B-432A-8820-C1AA53453A7D.jpeg" alt="Polynesian Cultural Center">
+                    <p>The Polynesian Cultural Center in Hawaii is a truly worthwhile destination for those seeking to understand Hawaiian culture. Hawaii is primarily composed of six distinct islands, 
+                        each with its own unique characteristics and culture. The Cultural Center offers an abundance of performances, allowing visitors to experience Hawaiian traditions in an immersive and direct way. 
+                        The performances were so captivating that I kept forgetting to take photos. The lunch provided was delicious, especially the roast pig and grilled fish.</p>
+                    <img src="./images/hawaii/Day2/D3291BDC-37BA-40A1-AE02-7162A482A255.jpeg" alt="Polynesian Cultural Center">
+                    <p>Finally, I highly recommend attending the evening show titled 'HĀ: Breath of Life.' Photography is not permitted during the performance, so I cannot provide any pictures. This show brilliantly 
+                        encapsulates the cultural essence and features of Hawaii's six islands with traditional costumes and dances that are truly awe-inspiring. Most of the performers are students from the University 
+                        of Hawaii. The host candidly informed us that by attending the show, we were supporting their education and expressed gratitude for our visit to Hawaii. 
+                        So, come on, visit Hawaii and experience its rich culture firsthand.</p><br>
+                    
+                    <p><strong>The End</strong></p>
+                    <img src="./images/hawaii/Day3/A7C0F1C8-F799-4B65-B89D-A6225EF503CE.jpeg" alt="photo">
+                    <p>There are many beautiful places in Hawaii that I didn't have time to visit on this trip. Especially considering I only explored Oahu this time around. I'm eagerly looking forward to my next encounter with Hawaii.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./images/hawaii/Food/9B51C4E4-944B-432A-8820-C1AA53453A7D.jpeg" alt="hawaii" loading="lazy">
+                  </figure>
+  
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Food</p>
+                      <span class="dot"></span>
+                      <time datetime="2023-08-23">Auguest 23 - 30, 2023</time>
+                    </div>
+  
+                    <h3 class="h3 blog-item-title">Great foods I've tasted in Hawaii</h3>
+                    <p class="blog-text">
+                       Great Hawaii food that is definitely worth a try if you are in Oahu!
+                    </p>
+                  </div>
+                  <div class="hidden-content" style="display: none;">
+                    <p>All photos were taken by myself. Copyright ©yej002</p>
+                    <img src="./images/hawaii//Food/559D951B-8FC9-44D9-BF95-398B5A7148D3.jpeg" alt="food">
+                    <p>"Loco moco is a dish featured in contemporary Hawaiian cuisine. There are many variations, but the traditional loco moco consists of white rice, topped with a hamburger, a fried egg, and brown gravy." (Wikipedia)</p>
+                    <p>On this trip, I tried the loco moco at Aloha Table restaurant, reputed to be the best in Hawaii. It was indeed incredibly fragrant and delicious. The fried onions sprinkled on top and within the gravy were a perfect 
+                        complement to the meat sauce and patty. Moreover, the patty seemed to be made of Wagyu beef, which was exceptionally juicy and bursting with the rich aromas of meat and butter.</p><br>
+                    <img src="./images/hawaii/Food/F83A5E7A-30CF-4BC7-8087-6CA1B0962EF4.jpeg" alt="food">
+                    <p>The Waiahole Poi Factory is a quaint local eatery near the Kualoa Ranch. It's quite small and unassuming, and it doesn't even qualify as a restaurant since there's no indoor dining. However, this modest establishment 
+                        offers some of the area's most renowned and delicious dishes. We tried the Laulau and Sweet Lady of Waiahole.</p>
+                    <p>Laulau is pork wrapped in the leaves of a native Hawaiian plant and baked until the meat's savory flavor 
+                        melds with the herbal fragrance of the leaves, resulting in a tender and juicy delicacy.</p>
+                    <p>Sweet Lady of Waiahole is a dessert featuring taro (poi) ice cream paired with a taro-flavored sticky rice. The coolness of 
+                        the ice cream contrasts beautifully with the warmth of the sticky rice, creating a delightful hot-and-cold sensation in your mouth. The taro used in the ice cream is a Hawaiian specialty known as poi, distinguished 
+                        by a unique flavor that is distinctly different and sweeter than other varieties of taro.</p><br>
+                    <img src="./images/hawaii/Food/D230900B-D232-4A68-9E7C-1629DDAD74F5.jpeg" alt="food">
+                    <p>On Oahu Island, there are many Japanese restaurants that serve tonkatsu (fried pork cutlet). After careful selection, we tried a place called Tonkatsu Tamafuji. Here, customers have the unique opportunity to grind 
+                        sesame seeds in a bowl using a pestle, turning them into a coarse powder and fully releasing their aroma. Then, tonkatsu sauce is added to the sesame mixture, enhancing each bite of the pork cutlet with a captivating 
+                        and delicious flavor. The quality of the tonkatsu itself is also exceptional. The thin, crispy crust becomes even crunchier after being deep-fried, while the juices of the pork are sealed within. </p>
+                    <p>Every bite I took here was a delight, and I highly recommend this restaurant to all tonkatsu enthusiasts. </p>
+                    <img src="./images/hawaii/Food/2D0BD39D-ABE7-49C6-8339-405C537BE959.jpeg" alt="food">
+                    <p>Giovanni's is a renowned local food truck, representing Hawaii's vibrant food truck culture. Like many tourists, I made it a point to visit. However, I must honestly say that apart from the deliciously flavored garlic shrimp, 
+                        there wasn't anything particularly exceptional.</p>
+                    <img src="./images/hawaii/Food/ABB3E1EF-F0AA-49BA-8CD4-0B1A7B2AED4B.jpeg" alt="food">
+                    <p>Due to Hawaii's proximity to Japan, Japanese cuisine has become an integral part of the Hawaiian culinary scene. We tried a Japanese yakitori restaurant called Tori Ton. Overall, it was quite delicious, though not markedly 
+                        different from other yakitori places I've experienced elsewhere. If you're looking for a reliable yakitori restaurant, I would recommend this one.</p>
+                    <img src="./images/hawaii/Food/7BEFEA5E-AD7F-4C7D-84D3-BF894B5F3EC8.jpeg" alt="food">
+                    <p>There are many places to enjoy a poke bowl in Hawaii. After trying numerous spots, we realized there isn't much of a noticeable difference between them. Perhaps it's because Hawaii is surrounded by the sea, ensuring that all 
+                        establishments have equally fresh ingredients. Additionally, poke seasoning is typically light, so the taste doesn't vary much from place to place. Anyway, you can't go wrong with any poke bowl on the island, and I don't have 
+                        any specific recommendations.</p>
+                    <img src="./images/hawaii/Food/B67FA6BF-0788-4AAF-93E6-2CDEAD9EC8B3.jpeg" alt="food">
+                    <p>On the island of Oahu, there's a coffee shop you absolutely must not miss - Island Vintage Coffee. </p>
+                    <p>Not only is their brunch exceptionally good and delicious, but their coffee is also worth trying. </p>
+                    <p>The Island Latte and Hawaiian Honey Latte, in particular, let you fully savor the unique taste of Hawaiian coffee. Hawaiian coffee beans have a very special aroma, which I find hard to describe due to the limitations of my 
+                        language - it's just incredibly fragrant and delicious. When I left Hawaii, I even bought several packs of whole coffee beans from the shop to grind and brew at home with my coffee machine. I really love Hawaiian coffee.</p>
+                    <p>By the way, if you are going to Island Vintage Coffee at Waikiki Beach, you should definitely try the Island Vintage Shave Ice, which is located right in front of Island Vintage Coffee. Their ice cream has a rich and creamy
+                        milk flavor that's absolutely delicious.</p>
+                </div>
+                </a>
+            </li>
+          </ul>
+        </section>
+
+        <!--- post modal-->
+
+        <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="post-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+  
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
+                <time class="modal-date" data-modal-date></time>
+                <div data-modal-text>
+                    <!-- Dynamic content will be inserted here by JavaScript -->
+                </div>
+              </div>
+            </section>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

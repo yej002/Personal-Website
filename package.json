@@ -1,0 +1,24 @@
+{
+  "name": "resume-yej002",
+  "version": "1.0.0",
+  "description": "[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=12872666) # Resume 💼🏢💻📄🗂📎🗄️🏦📠🖇🖨📱📧",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Jing Ye",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^22.1.0"
+  },
+  "jest": {
+    "setupFiles": ["./jest.setup.js"],
+    "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "coverageReporters": ["html", "text"],
+    "coverageDirectory": "coverage"
+  }
+}
